@@ -1,4 +1,4 @@
-Warden::Strategies.add(:password_authenticatable) do
+Warden::Strategies.add(:password_authenticatable) do 
   def valid?
     params['user'] && params['user']['email'] && params['user']['password']
   end
