@@ -81,14 +81,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
       set_flash_message!(:alert, appropriate_error_message(otp_attempt, current_password))
       false
     end
-    
-    def appropriate_error_message(otp_attempt, current_password)
+  end
+  
+  def appropriate_error_message(otp_attempt, current_password)
       return :invalid_otp unless resource.validate_and_consume_otp!(otp_attempt)
       return :invalid_password unless resource.valid_password?(current_password)
   
       :invalid_otp_and_password
     end
-  end
   
   def process_standard_update
     prev_unconfirmed_email = resource.unconfirmed_email if resource.respond_to?(:unconfirmed_email)

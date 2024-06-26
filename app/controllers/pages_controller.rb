@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :user_has_2fa, only: [:home]
+  before_action :two_factor_authenticate, only: [:home]
   
   def home
    
