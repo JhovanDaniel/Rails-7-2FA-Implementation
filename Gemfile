@@ -5,6 +5,7 @@ ruby "3.2.2"
 
 gem 'devise'
 gem 'devise-two-factor'
+gem 'rqrcode'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8", ">= 7.0.8.4"
