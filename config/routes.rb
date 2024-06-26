@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'users/otp', to: 'users#show_otp', as: 'user_otp'
   post 'users/otp', to: 'users#verify_otp', as: 'verify_user_otp'
   post 'verify_otp', to: 'users/sessions#verify_otp'
+  
+  get 'users/setup_2fa', to: 'users#setup_2fa'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

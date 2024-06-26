@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, except: [:show_otp, :verify_otp]
   
+  def setup_2fa
+    
+  end
+  
   def disable_otp
     # current_user.otp_required_for_login = false
     # current_user.save!
