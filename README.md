@@ -1,24 +1,4 @@
-# README
+Rails 2FA Implementation using QR codes for apps such as Google Authenticator.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Based on Deanin's implementation https://www.youtube.com/watch?v=69nTglWf6SM
+Reworked for for mandatory 2FA and admin only disable/enable 2FA.
